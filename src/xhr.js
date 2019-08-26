@@ -1,6 +1,6 @@
-const myurl = encodeURIComponent('https://api.ratesapi.io/api/latest');
+const myurl = 'https://api.ratesapi.io/api/latest';
 
-const req = (myurl) => {
+const req = () => {
     const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = () => {
@@ -14,7 +14,7 @@ const req = (myurl) => {
 }
 
 (function () {
-    req(myurl);
+    req();
 })();
 
 const buttonXHR = document.querySelector(".button__xhr")
