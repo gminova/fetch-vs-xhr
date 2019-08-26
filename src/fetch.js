@@ -8,7 +8,7 @@ const request = () => {
 }
 
 (function () {
-    request(url);
+    request();
 })();
 
 const buttonFetch = document.querySelector(".button__fetch")

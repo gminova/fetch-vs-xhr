@@ -1,6 +1,6 @@
 const myurl = encodeURIComponent('https://api.ratesapi.io/api/latest');
 
-const req = () => {
+const req = (myurl) => {
     const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = () => {
@@ -9,7 +9,7 @@ const req = () => {
             console.log("xhr json", json)
         }
     };
-    xhr.open("GET", url, true);
+    xhr.open("GET", myurl, true);
     xhr.send();
 }
 
