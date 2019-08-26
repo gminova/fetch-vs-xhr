@@ -3,7 +3,7 @@ const url = 'https://api.ratesapi.io/api/latest';
 const request = () => {
     fetch(url)
         .then(response => response.json())
-        .then(json => console.log(json))
+        .then(json => console.log("fetch json", json))
         .catch(error => console.error(error));
 }
 
